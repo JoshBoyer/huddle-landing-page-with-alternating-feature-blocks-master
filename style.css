@@ -99,8 +99,6 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 2.4rem 1.6rem;
-  margin: 0 auto;
-  max-width: 400px;
 }
 
 .header__logo {
@@ -109,11 +107,6 @@ a {
 }
 
 /* HERO */
-
-.hero__container {
-  max-width: 40rem;
-  margin: 0 auto;
-}
 
 .hero {
   background-color: var(--color-cyan-light);
@@ -146,9 +139,7 @@ a {
 /* CARDS */
 
 .cards {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2rem 12rem;
   display: grid;
   flex-flow: column;
   gap: 4rem;
@@ -176,4 +167,101 @@ a {
   font-size: 1.4rem;
   line-height: 2.1rem;
   color: var(--color-blue-grey);
+}
+
+/* WIDGET */
+
+.widget {
+  padding: 4.1rem 1.2rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 1.4rem rgba(0, 0, 0, 0.0710768);
+  position: relative;
+  z-index: 5;
+  margin: 0 1.2rem -6.75rem;
+}
+
+.widget__heading {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.widget__btn {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1.25rem 4.9rem 1.25rem 5rem;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding-left: 1.8rem;
+}
+
+.footer__logo {
+  padding-top: 14rem;
+  margin-bottom: 2.4rem;
+  width: 50%;
+  filter: brightness(0%) invert(100%);
+}
+
+.footer__contact {
+  display: flex;
+  flex-flow: column;
+  gap: 2.4rem;
+  margin-bottom: 4.1rem;
+}
+
+.location,
+.phone,
+.email {
+  display: flex;
+}
+
+.location__icon,
+.phone__icon,
+.email__icon {
+  flex-basis: 2.4rem;
+  margin-right: 1.6rem;
+}
+
+.location__copy {
+  width: 40ch;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.phone__link:hover,
+.email__link:hover {
+  text-decoration: underline;
+}
+
+.footer-nav__list,
+.footer-social__list {
+  list-style: none;
+}
+
+.footer-nav__item {
+  line-height: 2.7rem;
+  margin-bottom: 1.6rem;
+}
+
+.footer-nav__link:hover {
+  text-decoration: underline;
+}
+
+.footer-social__list {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 2.4rem;
+}
+
+.footer__copywrite {
+  font-size: 1.113rem;
+  text-align: center;
+  padding-bottom: 4.55rem;
 }
